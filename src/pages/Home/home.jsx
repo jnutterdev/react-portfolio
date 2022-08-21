@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { HeroSm, HeroMd, HeroLg } from '../../assets/'
+import Scroller from "../../components/scroller";
 
 function Home() {
     return (
@@ -50,7 +51,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-
+            <Scroller/>
         </div>
     )
 }
