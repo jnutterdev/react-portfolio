@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import { HeroSm, HeroMd, HeroLg } from '../../assets/'
+import { HeroSm, HeroMd, HeroLg, PortfolioPattern } from '../../assets/'
 import Scroller from "../../components/scroller";
 
 function Home() {
@@ -51,7 +51,35 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <Scroller/>
+            <Scroller 
+                text={"★ Let's get to work! ★ Have a project in mind? ★ Let's get to work! ★ Have a project in mind? "}
+                link="/contact"
+            />
+
+        <section id="work" className="px-4 pb-12 border-black border-t-2 bg-teal-600 bg-fixed" style={{ backgroundImage: "url(" + PortfolioPattern + ")" }}>
+            
+            <div className="container mx-auto">
+
+                <div className="text-white text-center py-12">
+                    <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-4">
+                        Selected work
+                    </h1>
+                    <p className="max-w-xl mx-auto text-lg">
+                        I've been developing websites since 1998, but also enjoy being radical.
+                    </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-8 mb-28">
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <section className="py-48"></section>
+
+
         </div>
     )
 }
