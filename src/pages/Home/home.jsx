@@ -73,8 +73,24 @@ function Home() {
                 <div className="grid md:grid-cols-2 gap-8 mb-28">
                     
                     {portfolioData.map((item, index) => (
-                        <Link to={item.link} key={index}>
-                            {item.title}
+                        <Link to={item.link} key={index} 
+                        className="md:even:pt-12 ease-in-out duration-75 hover:translate-y-[-4px] hover:drop-shadow-[10px_8px_0_rgba(0,0,0,1)]">
+                            
+                            <div className="border-2 border-black rounded-xl overflow-hidden bg-black">
+                                <img src={item.thumbnail} alt={item.alt} loading='lazy' />
+                            </div>
+                            
+                            <div className="bg-white border-x-2 border-black border-b-2 rounded-b-xl mx-4 p-4 text-lg flex justify-between gap-4 items-center">
+                                <div>
+                                    <span className="font-bold  ">{item.title} </span>
+                                    <span className="text-zinc-400">&#9679; {item.category}</span>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+                            </div>
+
+                            
                         </Link>
                     ))}
                 </div>
@@ -83,7 +99,7 @@ function Home() {
         </section>
 
         <section className="py-48"></section>
-
+    
 
         </div>
     )
