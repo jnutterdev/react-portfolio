@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { HeroSm, HeroMd, HeroLg, PortfolioPattern } from '../../assets/'
 import Scroller from "../../components/scroller";
+import { portfolioData } from '../../data';
 
 function Home() {
     return (
@@ -71,8 +72,12 @@ function Home() {
 
                 <div className="grid md:grid-cols-2 gap-8 mb-28">
                     
+                    {portfolioData.map((item, index) => (
+                        <Link to={item.link} key={index}>
+                            {item.title}
+                        </Link>
+                    ))}
                 </div>
-
             </div>
 
         </section>
