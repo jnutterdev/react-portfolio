@@ -6,10 +6,10 @@ const activeClassName = "relative before:content-['*'] before:-top-4 before:left
 
 function Header() {
   return (
-    <header className="grid grid-cols-2 md:grid-cols-[180px_1fr_180px] border-black border-2 bg-white">
+    <header className="nes-container with-title is-centered grid grid-cols-2 md:grid-cols-[180px_1fr_180px] bg-white">
 
-        <Link to="/" className="flex py-4 align-middle border-black border-r-2 justify-center">
-          <img src={Logo} alt='John' width='137' height='15' />
+        <Link to="/" className="flex py-4 align-middle justify-center">
+          <img src={Logo} alt='John' width='117' height='15' />
         </Link>
 
         <Link to="/contact" className="md:col-start-3 border-black md:border-l-2 flex gap-2 items-center justify-center text-lg bg-yellow-300 hover:bg-yellow-500 ease-in-out duration-75">

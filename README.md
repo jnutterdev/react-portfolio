@@ -1,1 +1,5 @@
-react-portfolio created from raddythebrand's react-portfolio video 
+# React based portfolio
+
+Uses some of the following:
+
+- NES.css
