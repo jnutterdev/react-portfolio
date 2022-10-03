@@ -52,10 +52,6 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <Scroller 
-                text={"★ Let's get to work! ★ Have a project in mind? ★ Let's get to work! ★ Have a project in mind? "}
-                link="/contact"
-            />
 
         <section id="work" className="px-4 pb-12 border-black border-t-2 bg-teal-600 bg-fixed" style={{ backgroundImage: "url(" + PortfolioPattern + ")" }}>
             
@@ -86,22 +82,53 @@ function Home() {
                                     <span className="text-zinc-400">&#9679; {item.category}</span>
                                 </div>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
                             </div>
-
-                            
                         </Link>
                     ))}
                 </div>
+                <Link to={'/work'} className="flex gap-4 font-bold text-white justify-center mb-8 text-xl">
+                        View all work
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                </Link>
             </div>
 
         </section>
 
-        <section className="py-48"></section>
-    
+        <section className="border-black border-t-2 px-4 py-12">
 
-        </div>
+            <div className="container mx-auto">
+            <div className="text-center py-12">
+                    <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-4">
+                        Services
+                    </h1>
+                    <p className="max-w-xl mx-auto text-lg">
+                        I've been developing websites since 1998, but also enjoy being radical.
+                    </p>
+                </div>
+
+                <div className="text-black py-12 grid lg:grid-cols-4 items-center">
+                    <div>
+
+                        <h3 className="text-3xl font-bold mb-4">web design</h3>
+                        <p className="mb-4 text-lg">
+                        I've been developing websites since 1998, but also enjoy being radical.
+                        </p>
+
+                        <Link to={'/web-design'} className="flex gap-2 items-center font-bold mb-14 text-lg">
+
+                        </Link>
+                    </div>
+                    <div className="flex justify-center mb-12 md:mb-0 col-span-2">image</div>
+                    <div>right</div>
+                </div>
+
+            </div>
+        </section>
+    </div>
     )
 }
 
